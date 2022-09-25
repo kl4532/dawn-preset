@@ -19,6 +19,9 @@ Copy those files to your new setup.
 
 Add `tailwind.css` into `assets/`
 
+Add `{{ 'tailwind.css' | asset_url | stylesheet_tag }}`
+to the `layout/theme.liquid`
+
 ## Run Tailwind watch 
 To create and watch tailwind styles run:
 `npx tailwind -i ./src/tailwind.css -o ./assets/tailwind.css --watch` 
