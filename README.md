@@ -1,3 +1,29 @@
+# Dawn preset
+
+## Included extensions:
+- Tailwind 3.1.8
+
+## Tailwind setup:
+#### !!! OPTIONAL for other projects, here already setup !!!
+
+Install Tailwind, postcss & autoprefixer dependencies
+
+`npm instal -D tailwindcss @tailwindcss/forms @tailwindcss/typography postcss autoprefixer`
+
+Settings for Tailwind located in:
+- `tailwind.confi.js`
+- `postcss.config.js`
+- `src/tailwind.css`
+
+Copy those files to your new setup.
+
+Add `tailwind.css` into `assets/`
+
+## Run Tailwind watch 
+To create and watch tailwind styles run:
+`npx tailwind -i ./src/tailwind.css -o ./assets/tailwind.css --watch` 
+
+
 # Dawn
 
 [![Build status](https://github.com/shopify/dawn/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Shopify/dawn/actions/workflows/ci.yml?query=branch%3Amain)
