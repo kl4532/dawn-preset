@@ -11,7 +11,7 @@ Install Tailwind, postcss & autoprefixer dependencies
 `npm instal -D tailwindcss @tailwindcss/forms @tailwindcss/typography postcss autoprefixer`
 
 Settings for Tailwind located in:
-- `tailwind.confi.js`
+- `tailwind.config.js`
 - `postcss.config.js`
 - `src/tailwind.css`
 
