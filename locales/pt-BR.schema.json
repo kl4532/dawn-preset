@@ -141,15 +141,6 @@
         "paragraph": "Os preços do carrinho e do checkout sempre mostram os códigos de moeda. Exemplo: 1,00 USD."
       }
     },
-    "favicon": {
-      "name": "Favicon",
-      "settings": {
-        "favicon": {
-          "label": "Imagem de favicon",
-          "info": "Será reduzida para 32 x 32 pixels"
-        }
-      }
-    },
     "layout": {
       "name": "Layout",
       "settings": {
@@ -157,7 +148,7 @@
           "label": "Largura da página"
         },
         "spacing_sections": {
-          "label": "Espaço vertical entre seções"
+          "label": "Espaço entre as seções do modelo"
         },
         "header__grid": {
           "content": "Grade"
@@ -353,6 +344,22 @@
             "label": "Cartão"
           },
           "label": "Estilo"
+        }
+      }
+    },
+    "logo": {
+      "name": "Logo",
+      "settings": {
+        "logo_image": {
+          "label": "Logo"
+        },
+        "logo_width": {
+          "label": "Largura do logo no desktop",
+          "info": "A largura do logo é otimizada automaticamente para dispositivos móveis."
+        },
+        "favicon": {
+          "label": "Imagem de favicon",
+          "info": "Será reduzida para 32 x 32 pixels"
         }
       }
     }
@@ -782,7 +789,7 @@
           "content": "Seletor de país/região"
         },
         "header__4": {
-          "info": "Adicione um país/uma região em [configurações de pagamento.](/admin/settings/payments)"
+          "info": "Adicione um país/uma região às [configurações de mercado.](/admin/settings/markets)"
         },
         "enable_country_selector": {
           "label": "Habilitar seletor de país/região"
@@ -804,19 +811,19 @@
         },
         "margin_top": {
           "label": "Margem superior"
+        },
+        "header__8": {
+          "content": "Links para políticas",
+          "info": "Para adicionar as políticas da loja, acesse [policy settings](/admin/settings/legal)."
+        },
+        "show_policy": {
+          "label": "Mostrar links para políticas"
         }
       }
     },
     "header": {
       "name": "Cabeçalho",
       "settings": {
-        "logo": {
-          "label": "Imagem do logo"
-        },
-        "logo_width": {
-          "unit": "px",
-          "label": "Largura personalizada do logo"
-        },
         "logo_position": {
           "label": "Posição do logo no desktop",
           "options__1": {
@@ -866,6 +873,12 @@
           "options__2": {
             "label": "Esquerda"
           }
+        },
+        "logo_header": {
+          "content": "Logo"
+        },
+        "logo_help": {
+          "content": "Edite seu logo nas [configurações do tema](/editor?context=theme&category=logo)."
         }
       }
     },
@@ -1460,12 +1473,11 @@
     "main-password-header": {
       "name": "Cabeçalho de senha",
       "settings": {
-        "logo": {
-          "label": "Imagem do logo"
+        "logo_header": {
+          "content": "Logo"
         },
-        "logo_max_width": {
-          "label": "Largura personalizada do logo",
-          "unit": "px"
+        "logo_help": {
+          "content": "Edite seu logo nas configurações do tema."
         }
       }
     },
@@ -1725,7 +1737,7 @@
           "name": "Produtos complementares",
           "settings": {
             "paragraph": {
-              "content": "Para selecionar produtos complementares, adicione o app Search & Discovery. [Saiba mais](https://shopify.dev/themes/product-merchandising/recommendations)"
+              "content": "Para selecionar produtos complementares, adicione o app Search & Discovery. [Saiba mais](https://help.shopify.com/manual/online-store/search-and-discovery/product-recommendations)"
             },
             "heading": {
               "label": "Título"
@@ -1764,6 +1776,95 @@
               "label": "Habilitar botão para adicionar rapidamente"
             }
           }
+        },
+        "icon_with_text": {
+          "name": "Ícone com texto",
+          "settings": {
+            "layout": {
+              "label": "Layout",
+              "options__1": {
+                "label": "Horizontal"
+              },
+              "options__2": {
+                "label": "Vertical"
+              }
+            },
+            "content": {
+              "label": "Conteúdo",
+              "info": "Escolha um ícone ou adicione uma imagem para cada coluna ou linha."
+            },
+            "heading": {
+              "info": "Deixe o título em branco para ocultar a coluna de ícone."
+            },
+            "icon_1": {
+              "label": "Primeiro ícone"
+            },
+            "image_1": {
+              "label": "Primeira imagem"
+            },
+            "heading_1": {
+              "label": "Primeiro título"
+            },
+            "icon_2": {
+              "label": "Segundo ícone"
+            },
+            "image_2": {
+              "label": "Segunda imagem"
+            },
+            "heading_2": {
+              "label": "Segundo título"
+            },
+            "icon_3": {
+              "label": "Terceiro ícone"
+            },
+            "image_3": {
+              "label": "Terceira imagem"
+            },
+            "heading_3": {
+              "label": "Terceiro título"
+            }
+          }
+        },
+        "sku": {
+          "name": "SKU",
+          "settings": {
+            "text_style": {
+              "label": "Estilo de texto",
+              "options__1": {
+                "label": "Corpo"
+              },
+              "options__2": {
+                "label": "Subtítulo"
+              },
+              "options__3": {
+                "label": "Letras maiúsculas"
+              }
+            }
+          }
+        },
+        "inventory": {
+          "name": "Status do estoque",
+          "settings": {
+            "text_style": {
+              "label": "Estilo de texto",
+              "options__1": {
+                "label": "Corpo"
+              },
+              "options__2": {
+                "label": "Legenda"
+              },
+              "options__3": {
+                "label": "Letras maiúsculas"
+              }
+            },
+            "inventory_threshold": {
+              "label": "Limite de estoque baixo",
+              "info": "Escolha 0 para sempre mostrar no estoque, se disponível."
+            },
+            "show_inventory_quantity": {
+              "label": "Mostrar contagem de estoque"
+            }
+          }
         }
       },
       "settings": {
@@ -1796,7 +1897,7 @@
           }
         },
         "media_size": {
-          "label": "Tamanho da mídia para desktop",
+          "label": "Largura da mídia para desktop",
           "options__1": {
             "label": "Pequeno"
           },
@@ -1828,6 +1929,31 @@
           },
           "options__2": {
             "label": "Direita"
+          }
+        },
+        "image_zoom": {
+          "label": "Zoom de imagem",
+          "info": "Clique e passe o cursor para abrir a janela modal no celular.",
+          "options__1": {
+            "label": "Abrir janela modal"
+          },
+          "options__2": {
+            "label": "Clicar e passar o cursor"
+          },
+          "options__3": {
+            "label": "Sem zoom"
+          }
+        },
+        "constrain_to_viewport": {
+          "label": "Ajustar a mídia à tela"
+        },
+        "media_fit": {
+          "label": "Ajuste da mídia",
+          "options__1": {
+            "label": "Original"
+          },
+          "options__2": {
+            "label": "Preenchimento"
           }
         }
       },
@@ -2324,6 +2450,23 @@
           "settings": {
             "paragraph": {
               "content": "Para exibir uma avaliação, adicione um app com essa funcionalidade específica. [Saiba mais](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#featured-product-rating)"
+            }
+          }
+        },
+        "sku": {
+          "name": "SKU",
+          "settings": {
+            "text_style": {
+              "label": "Estilo de texto",
+              "options__1": {
+                "label": "Corpo"
+              },
+              "options__2": {
+                "label": "Subtítulo"
+              },
+              "options__3": {
+                "label": "Letras maiúsculas"
+              }
             }
           }
         }

@@ -141,15 +141,6 @@
         "paragraph": "Giá giỏ hàng và giá thanh toán luôn hiển thị mã đơn vị tiền tệ. Ví dụ: 1,00 USD."
       }
     },
-    "favicon": {
-      "name": "Biểu tượng trang web",
-      "settings": {
-        "favicon": {
-          "label": "Hình ảnh biểu tượng trang web",
-          "info": "Sẽ được thu nhỏ xuống 32 x 32 px"
-        }
-      }
-    },
     "layout": {
       "name": "Bố cục",
       "settings": {
@@ -157,7 +148,7 @@
           "label": "Chiều rộng trang"
         },
         "spacing_sections": {
-          "label": "Không gian dọc giữa các mục"
+          "label": "Khoảng cách giữa các mục mẫu"
         },
         "header__grid": {
           "content": "Lưới"
@@ -353,6 +344,22 @@
             "label": "Thẻ"
           },
           "label": "Kiểu"
+        }
+      }
+    },
+    "logo": {
+      "name": "Logo",
+      "settings": {
+        "logo_image": {
+          "label": "Logo"
+        },
+        "logo_width": {
+          "label": "Chiều rộng logo trên màn hình nền",
+          "info": "Chiều rộng logo được tự động tối ưu hóa cho thiết bị di động."
+        },
+        "favicon": {
+          "label": "Hình ảnh biểu tượng trang web",
+          "info": "Sẽ được thu nhỏ xuống 32 x 32 px"
         }
       }
     }
@@ -782,7 +789,7 @@
           "content": "Hộp chọn quốc gia/vùng"
         },
         "header__4": {
-          "info": "Để thêm quốc gia/vùng, vào [cài đặt thanh toán](/admin/settings/payments)."
+          "info": "Để thêm quốc gia/khu vực, vào [cài đặt thị trường.](/admin/settings/markets)"
         },
         "enable_country_selector": {
           "label": "Bật hộp chọn quốc gia/vùng"
@@ -804,19 +811,19 @@
         },
         "margin_top": {
           "label": "Lề trên"
+        },
+        "header__8": {
+          "content": "Liên kết chính sách",
+          "info": "Để thêm chính sách cửa hàng, truy cập [cài đặt chính sách](/admin/settings/legal)."
+        },
+        "show_policy": {
+          "label": "Hiển thị liên kết chính sách"
         }
       }
     },
     "header": {
       "name": "Đầu trang",
       "settings": {
-        "logo": {
-          "label": "Hình ảnh logo"
-        },
-        "logo_width": {
-          "unit": "px",
-          "label": "Chiều rộng logo tùy chỉnh"
-        },
         "logo_position": {
           "label": "Vị trí logo trên màn hình nền",
           "options__1": {
@@ -866,6 +873,12 @@
           "options__2": {
             "label": "Bên trái"
           }
+        },
+        "logo_header": {
+          "content": "Logo"
+        },
+        "logo_help": {
+          "content": "Chỉnh sửa logo trong [cài đặt chủ đề](/editor?context=theme&category=logo)."
         }
       }
     },
@@ -1460,12 +1473,11 @@
     "main-password-header": {
       "name": "Đầu trang mật khẩu",
       "settings": {
-        "logo": {
-          "label": "Hình ảnh logo"
+        "logo_header": {
+          "content": "Logo"
         },
-        "logo_max_width": {
-          "label": "Chiều rộng logo tùy chỉnh",
-          "unit": "px"
+        "logo_help": {
+          "content": "Chỉnh sửa logo trong cài đặt chủ đề."
         }
       }
     },
@@ -1726,7 +1738,7 @@
           "name": "Sản phẩm bổ sung",
           "settings": {
             "paragraph": {
-              "content": "Để chọn sản phẩm bổ sung, hãy thêm ứng dụng Search & Discovery. [Tìm hiểu thêm](https://shopify.dev/themes/product-merchandising/recommendations)"
+              "content": "Để chọn sản phẩm bổ sung, hãy thêm ứng dụng Search & Discovery. [Tìm hiểu thêm](https://help.shopify.com/manual/online-store/search-and-discovery/product-recommendations)"
             },
             "heading": {
               "label": "Tiêu đề"
@@ -1765,6 +1777,95 @@
               "label": "Bật nút thêm nhanh"
             }
           }
+        },
+        "icon_with_text": {
+          "name": "Biểu tượng có văn bản",
+          "settings": {
+            "layout": {
+              "label": "Bố cục",
+              "options__1": {
+                "label": "Ngang"
+              },
+              "options__2": {
+                "label": "Dọc"
+              }
+            },
+            "content": {
+              "label": "Nội dung",
+              "info": "Chọn biểu tượng hoặc thêm ảnh cho từng cột hoặc hàng."
+            },
+            "heading": {
+              "info": "Để trống nhãn tiêu đề để ẩn cột biểu tượng."
+            },
+            "icon_1": {
+              "label": "Biểu tượng đầu tiên"
+            },
+            "image_1": {
+              "label": "Hình ảnh đầu tiên"
+            },
+            "heading_1": {
+              "label": "Tiêu đề đầu tiên"
+            },
+            "icon_2": {
+              "label": "Biểu tượng thứ hai"
+            },
+            "image_2": {
+              "label": "Hình ảnh thứ hai"
+            },
+            "heading_2": {
+              "label": "Tiêu đề thứ hai"
+            },
+            "icon_3": {
+              "label": "Biểu tượng thứ ba"
+            },
+            "image_3": {
+              "label": "Hình ảnh thứ ba"
+            },
+            "heading_3": {
+              "label": "Tiêu đề thứ ba"
+            }
+          }
+        },
+        "sku": {
+          "name": "SKU",
+          "settings": {
+            "text_style": {
+              "label": "Kiểu văn bản",
+              "options__1": {
+                "label": "Nội dung"
+              },
+              "options__2": {
+                "label": "Tiêu đề phụ"
+              },
+              "options__3": {
+                "label": "Chữ viết hoa"
+              }
+            }
+          }
+        },
+        "inventory": {
+          "name": "Trạng thái hàng lưu kho",
+          "settings": {
+            "text_style": {
+              "label": "Kiểu văn bản",
+              "options__1": {
+                "label": "Nội dung"
+              },
+              "options__2": {
+                "label": "Tiêu đề phụ"
+              },
+              "options__3": {
+                "label": "Chữ viết hoa"
+              }
+            },
+            "inventory_threshold": {
+              "label": "Ngưỡng hàng trong kho thấp",
+              "info": "Chọn 0 để luôn hiển thị còn hàng nếu có."
+            },
+            "show_inventory_quantity": {
+              "label": "Hiển thị số lượng hàng trong kho"
+            }
+          }
         }
       },
       "settings": {
@@ -1797,7 +1898,7 @@
           }
         },
         "media_size": {
-          "label": "Kích cỡ phương tiện trên màn hình nền",
+          "label": "Chiều rộng phương tiện trên màn hình nền",
           "info": "Phương tiện được tự động tối ưu hóa cho thiết bị di động.",
           "options__1": {
             "label": "Nhỏ"
@@ -1829,6 +1930,31 @@
           },
           "options__2": {
             "label": "Bên phải"
+          }
+        },
+        "image_zoom": {
+          "label": "Thu phóng hình ảnh",
+          "info": "Nhấp và di chuột đến mục Mặc định để mở lightbox trên thiết bị di động.",
+          "options__1": {
+            "label": "Mở lightbox"
+          },
+          "options__2": {
+            "label": "Nhấp và di chuột"
+          },
+          "options__3": {
+            "label": "Không thu phóng"
+          }
+        },
+        "constrain_to_viewport": {
+          "label": "Giới hạn phương tiện theo chiều cao màn hình"
+        },
+        "media_fit": {
+          "label": "Phù hợp với phương tiện",
+          "options__1": {
+            "label": "Gốc"
+          },
+          "options__2": {
+            "label": "Tràn màn hình"
           }
         }
       }
@@ -2324,6 +2450,23 @@
           "settings": {
             "paragraph": {
               "content": "Nếu muốn hiển thị thứ hạng, hãy thêm ứng dụng xếp hạng sản phẩm. [Tìm hiểu thêm](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#featured-product-rating)"
+            }
+          }
+        },
+        "sku": {
+          "name": "SKU",
+          "settings": {
+            "text_style": {
+              "label": "Kiểu văn bản",
+              "options__1": {
+                "label": "Nội dung"
+              },
+              "options__2": {
+                "label": "Tiêu đề phụ"
+              },
+              "options__3": {
+                "label": "Chữ viết hoa"
+              }
             }
           }
         }

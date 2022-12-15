@@ -141,15 +141,6 @@
         }
       }
     },
-    "favicon": {
-      "name": "Favicon",
-      "settings": {
-        "favicon": {
-          "label": "รูปภาพ Favicon",
-          "info": "จะถูกลดขนาดลงเป็น 32 x 32 พิกเซล"
-        }
-      }
-    },
     "layout": {
       "name": "เลย์เอาต์",
       "settings": {
@@ -157,7 +148,7 @@
           "label": "ความกว้างของหน้า"
         },
         "spacing_sections": {
-          "label": "ช่องว่างแนวตั้งระหว่างส่วนต่างๆ"
+          "label": "ช่องว่างระหว่างส่วนเทมเพลต"
         },
         "header__grid": {
           "content": "กริด"
@@ -353,6 +344,22 @@
             "label": "บัตร"
           },
           "label": "รูปแบบ"
+        }
+      }
+    },
+    "logo": {
+      "name": "โลโก้",
+      "settings": {
+        "logo_image": {
+          "label": "โลโก้"
+        },
+        "logo_width": {
+          "label": "ความกว้างของโลโก้บนเดสก์ท็อป",
+          "info": "ระบบจะปรับความกว้างของโลโก้ให้เหมาะสมกับมือถือโดยอัตโนมัติ"
+        },
+        "favicon": {
+          "label": "รูปภาพ Favicon",
+          "info": "จะถูกลดขนาดลงเป็น 32 x 32 พิกเซล"
         }
       }
     }
@@ -782,7 +789,7 @@
           "content": "ตัวเลือกประเทศ/ภูมิภาค"
         },
         "header__4": {
-          "info": "หากต้องการเพิ่มประเทศ/ภูมิภาค ให้ไปที่ [การตั้งค่าการชำระเงิน](/admin/settings/payments)"
+          "info": "หากต้องการเพิ่มประเทศ/ภูมิภาค ให้ไปที่ [การตั้งค่าตลาด](/admin/settings/markets)"
         },
         "enable_country_selector": {
           "label": "เปิดใช้งานตัวเลือกประเทศ/ภูมิภาค"
@@ -804,19 +811,19 @@
         },
         "margin_top": {
           "label": "ย่อหน้าบน"
+        },
+        "header__8": {
+          "content": "ลิงก์นโยบาย",
+          "info": "หากต้องการเพิ่มนโยบายร้านค้า ให้ไปที่การตั้งค่านโยบาย](/admin/settings/legal)"
+        },
+        "show_policy": {
+          "label": "แสดงลิงก์นโยบาย"
         }
       }
     },
     "header": {
       "name": "ส่วนหัว",
       "settings": {
-        "logo": {
-          "label": "รูปภาพโลโก้"
-        },
-        "logo_width": {
-          "unit": "px",
-          "label": "ความกว้างของโลโก้แบบกำหนดเอง"
-        },
         "logo_position": {
           "label": "ตำแหน่งโลโก้บนเดสก์ท็อป",
           "options__1": {
@@ -866,6 +873,12 @@
           "options__2": {
             "label": "ซ้าย"
           }
+        },
+        "logo_header": {
+          "content": "โลโก้"
+        },
+        "logo_help": {
+          "content": "แก้ไขโลโก้ของคุณใน [การตั้งค่าธีม ](/editor?context=theme&category=logo)"
         }
       }
     },
@@ -1460,12 +1473,11 @@
     "main-password-header": {
       "name": "ส่วนหัวของรหัสผ่าน",
       "settings": {
-        "logo": {
-          "label": "รูปภาพโลโก้"
+        "logo_header": {
+          "content": "โลโก้"
         },
-        "logo_max_width": {
-          "label": "ความกว้างของโลโก้แบบกำหนดเอง",
-          "unit": "px"
+        "logo_help": {
+          "content": "แก้ไขโลโก้ของคุณในการตั้งค่าธีม"
         }
       }
     },
@@ -1726,7 +1738,7 @@
           "name": "สินค้าเสริม",
           "settings": {
             "paragraph": {
-              "content": "หากต้องการเลือกสินค้าเสริม ให้เพิ่มแอปค้นหาและการค้นพบ [ดูข้อมูลเพิ่มเติม](https://shopify.dev/themes/product-merchandising/recommendations)"
+              "content": "หากต้องการเลือกสินค้าเสริม ให้เพิ่มแอปค้นหาและการค้นพบ [ดูข้อมูลเพิ่มเติม](https://help.shopify.com/manual/online-store/search-and-discovery/product-recommendations)"
             },
             "heading": {
               "label": "หัวเรื่อง"
@@ -1765,6 +1777,95 @@
               "label": "เปิดใช้งานปุ่มซื้อด่วน"
             }
           }
+        },
+        "icon_with_text": {
+          "name": "ไอคอนที่มีข้อความ",
+          "settings": {
+            "layout": {
+              "label": "เลย์เอาต์",
+              "options__1": {
+                "label": "แนวนอน"
+              },
+              "options__2": {
+                "label": "แนวตั้ง"
+              }
+            },
+            "content": {
+              "label": "เนื้อหา",
+              "info": "เลือกไอคอนหรือเพิ่มรูปภาพให้แต่ละคอลัมน์หรือแต่ละแถว"
+            },
+            "heading": {
+              "info": "เว้นว่างป้ายส่วนหัวไว้เพื่อซ่อนคอลัมน์ไอคอน"
+            },
+            "icon_1": {
+              "label": "ไอคอนแรก"
+            },
+            "image_1": {
+              "label": "รูปภาพแรก"
+            },
+            "heading_1": {
+              "label": "ส่วนหัวแรก"
+            },
+            "icon_2": {
+              "label": "ไอคอนที่สอง"
+            },
+            "image_2": {
+              "label": "รูปภาพที่สอง"
+            },
+            "heading_2": {
+              "label": "ส่วนหัวที่สอง"
+            },
+            "icon_3": {
+              "label": "ไอคอนที่สาม"
+            },
+            "image_3": {
+              "label": "รูปภาพที่สาม"
+            },
+            "heading_3": {
+              "label": "ส่วนหัวที่สาม"
+            }
+          }
+        },
+        "sku": {
+          "name": "SKU",
+          "settings": {
+            "text_style": {
+              "label": "รูปแบบข้อความ",
+              "options__1": {
+                "label": "เนื้อหา"
+              },
+              "options__2": {
+                "label": "หัวเรื่องย่อย"
+              },
+              "options__3": {
+                "label": "ตัวพิมพ์ใหญ่"
+              }
+            }
+          }
+        },
+        "inventory": {
+          "name": "สถานะสินค้าคงคลัง",
+          "settings": {
+            "text_style": {
+              "label": "รูปแบบข้อความ",
+              "options__1": {
+                "label": "เนื้อหา"
+              },
+              "options__2": {
+                "label": "หัวเรื่องย่อย"
+              },
+              "options__3": {
+                "label": "ตัวพิมพ์ใหญ่"
+              }
+            },
+            "inventory_threshold": {
+              "label": "เกณฑ์สินค้าคงคลังต่ำ",
+              "info": "เลือกเป็น 0 เพื่อแสดงว่ามีสินค้าตลอดเวลา หากมีสินค้า"
+            },
+            "show_inventory_quantity": {
+              "label": "แสดงจำนวนสินค้าคงคลัง"
+            }
+          }
         }
       },
       "settings": {
@@ -1797,7 +1898,7 @@
           }
         },
         "media_size": {
-          "label": "ขนาดของสื่อบนเดสก์ท็อป",
+          "label": "ความกว้างของสื่อบนเดสก์ท็อป",
           "options__1": {
             "label": "เล็ก"
           },
@@ -1829,6 +1930,31 @@
           },
           "options__2": {
             "label": "ขวา"
+          }
+        },
+        "image_zoom": {
+          "label": "การซูมรูปภาพ",
+          "info": "ตัวเลือก “คลิกและเลื่อนเมาส์” จะเปิด Lightbox บนอุปกรณ์เคลื่อนที่โดยค่าเริ่มต้น",
+          "options__1": {
+            "label": "เปิด Lightbox"
+          },
+          "options__2": {
+            "label": "คลิกและเลื่อนเมาส์"
+          },
+          "options__3": {
+            "label": "ไม่มีการซูม"
+          }
+        },
+        "constrain_to_viewport": {
+          "label": "จำกัดสื่อไว้ที่ความสูงของหน้าจอ"
+        },
+        "media_fit": {
+          "label": "สื่อแบบพอดี",
+          "options__1": {
+            "label": "ต้นฉบับ"
+          },
+          "options__2": {
+            "label": "การเติมสี"
           }
         }
       }
@@ -2324,6 +2450,23 @@
           "settings": {
             "paragraph": {
               "content": "หากต้องการแสดงคะแนน ให้เพิ่มแอปการให้คะแนนสินค้า [ดูข้อมูลเพิ่มเติม](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#featured-product-rating)"
+            }
+          }
+        },
+        "sku": {
+          "name": "SKU",
+          "settings": {
+            "text_style": {
+              "label": "รูปแบบข้อความ",
+              "options__1": {
+                "label": "เนื้อหา"
+              },
+              "options__2": {
+                "label": "หัวเรื่องย่อย"
+              },
+              "options__3": {
+                "label": "ตัวพิมพ์ใหญ่"
+              }
             }
           }
         }

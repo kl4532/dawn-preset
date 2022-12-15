@@ -141,15 +141,6 @@
         "paragraph": "Ceny w koszyku i kasie zawsze zawierają kody walut. Przykład: 1,00 USD."
       }
     },
-    "favicon": {
-      "name": "Ikona Favicon",
-      "settings": {
-        "favicon": {
-          "label": "Obraz ikony Favicon",
-          "info": "Zostanie zmniejszony do rozmiaru 32 x 32 piksele."
-        }
-      }
-    },
     "layout": {
       "name": "Układ",
       "settings": {
@@ -157,7 +148,7 @@
           "label": "Szerokość strony"
         },
         "spacing_sections": {
-          "label": "Pionowa przestrzeń między sekcjami"
+          "label": "Odstęp między sekcjami szablonu"
         },
         "header__grid": {
           "content": "Siatka"
@@ -353,6 +344,22 @@
             "label": "Karta"
           },
           "label": "Styl"
+        }
+      }
+    },
+    "logo": {
+      "name": "Logo",
+      "settings": {
+        "logo_image": {
+          "label": "Logo"
+        },
+        "logo_width": {
+          "label": "Szerokość logo na komputerze",
+          "info": "Szerokość logo jest automatycznie optymalizowana dla urządzeń mobilnych."
+        },
+        "favicon": {
+          "label": "Obraz ikony Favicon",
+          "info": "Zostanie zmniejszony do rozmiaru 32 x 32 piksele"
         }
       }
     }
@@ -782,7 +789,7 @@
           "content": "Selektor kraju/regionu"
         },
         "header__4": {
-          "info": "Aby dodać kraj/region, przejdź do swoich [ustawień płatności.](/admin/settings/payments)"
+          "info": "Aby dodać kraj/region, przejdź do swoich [ustawień rynku.](/admin/settings/markets)"
         },
         "enable_country_selector": {
           "label": "Włącz selektor kraju/regionu"
@@ -804,19 +811,19 @@
         },
         "margin_top": {
           "label": "Górna granica"
+        },
+        "header__8": {
+          "content": "Linki do polityki",
+          "info": "Aby dodać polityki sklepu, przejdź do [ustawień polityki](/admin/settings/legal)."
+        },
+        "show_policy": {
+          "label": "Pokaż linki do polityki"
         }
       }
     },
     "header": {
       "name": "Nagłówek",
       "settings": {
-        "logo": {
-          "label": "Obraz logo"
-        },
-        "logo_width": {
-          "unit": "px",
-          "label": "Niestandardowa szerokość logo"
-        },
         "logo_position": {
           "label": "Pozycja logo na komputerze",
           "options__1": {
@@ -866,6 +873,12 @@
           "options__2": {
             "label": "Lewa strona"
           }
+        },
+        "logo_header": {
+          "content": "Logo"
+        },
+        "logo_help": {
+          "content": "Edytuj logo w [theme settings](/editor?context=theme&category=logo)."
         }
       }
     },
@@ -1460,12 +1473,11 @@
     "main-password-header": {
       "name": "Nagłówek hasła",
       "settings": {
-        "logo": {
-          "label": "Obraz logo"
+        "logo_header": {
+          "content": "Logo"
         },
-        "logo_max_width": {
-          "label": "Niestandardowa szerokość logo",
-          "unit": "px"
+        "logo_help": {
+          "content": "Edytuj logo w ustawieniach szablonu."
         }
       }
     },
@@ -1726,7 +1738,7 @@
           "name": "Produkty uzupełniające",
           "settings": {
             "paragraph": {
-              "content": "Aby wybrać produkty uzupełniające, dodaj aplikację Search & Discovery. [Dowiedz się więcej](https://shopify.dev/themes/product-merchandising/recommendations)"
+              "content": "Aby wybrać produkty uzupełniające, dodaj aplikację Search & Discovery. [Dowiedz się więcej](https://help.shopify.com/manual/online-store/search-and-discovery/product-recommendations)"
             },
             "heading": {
               "label": "Nagłówek"
@@ -1765,6 +1777,95 @@
               "label": "Włącz przycisk szybkiego dodawania"
             }
           }
+        },
+        "icon_with_text": {
+          "name": "Ikona z tekstem",
+          "settings": {
+            "layout": {
+              "label": "Układ",
+              "options__1": {
+                "label": "W poziomie"
+              },
+              "options__2": {
+                "label": "W pionie"
+              }
+            },
+            "content": {
+              "label": "Zawartość",
+              "info": "Wybierz ikonę lub dodaj obraz dla każdej kolumny lub wiersza."
+            },
+            "heading": {
+              "info": "Pozostaw etykietę nagłówka pustą, aby ukryć kolumnę ikony."
+            },
+            "icon_1": {
+              "label": "Pierwsza ikona"
+            },
+            "image_1": {
+              "label": "Pierwszy obraz"
+            },
+            "heading_1": {
+              "label": "Pierwszy nagłówek"
+            },
+            "icon_2": {
+              "label": "Druga ikona"
+            },
+            "image_2": {
+              "label": "Drugi obraz"
+            },
+            "heading_2": {
+              "label": "Drugi nagłówek"
+            },
+            "icon_3": {
+              "label": "Trzecia ikona"
+            },
+            "image_3": {
+              "label": "Trzeci obraz"
+            },
+            "heading_3": {
+              "label": "Trzeci nagłówek"
+            }
+          }
+        },
+        "sku": {
+          "name": "SKU",
+          "settings": {
+            "text_style": {
+              "label": "Styl tekstu",
+              "options__1": {
+                "label": "Tekst podstawowy"
+              },
+              "options__2": {
+                "label": "Podtytuł"
+              },
+              "options__3": {
+                "label": "Duże litery"
+              }
+            }
+          }
+        },
+        "inventory": {
+          "name": "Status zapasów",
+          "settings": {
+            "text_style": {
+              "label": "Styl tekstu",
+              "options__1": {
+                "label": "Tekst podstawowy"
+              },
+              "options__2": {
+                "label": "Podtytuł"
+              },
+              "options__3": {
+                "label": "Duże litery"
+              }
+            },
+            "inventory_threshold": {
+              "label": "Niski próg zapasów",
+              "info": "Wybierz 0, aby zawsze pokazywać w magazynie, jeśli jest dostępny."
+            },
+            "show_inventory_quantity": {
+              "label": "Pokaż ilość zapasów"
+            }
+          }
         }
       },
       "settings": {
@@ -1797,7 +1898,7 @@
           }
         },
         "media_size": {
-          "label": "Rozmiar plików multimedialnych dla komputera",
+          "label": "Szerokość multimediów dla komputera",
           "options__1": {
             "label": "Mały"
           },
@@ -1829,6 +1930,31 @@
           },
           "options__2": {
             "label": "Prawa strona"
+          }
+        },
+        "image_zoom": {
+          "label": "Powiększenie obrazu",
+          "info": "Kliknij i najedź kursorem na wartości domyślne, aby otworzyć lightbox na urządzeniu mobilnym.",
+          "options__1": {
+            "label": "Otwórz lightbox"
+          },
+          "options__2": {
+            "label": "Kliknij i najedź kursorem"
+          },
+          "options__3": {
+            "label": "Bez powiększenia"
+          }
+        },
+        "constrain_to_viewport": {
+          "label": "Ograniczenie multimediów do wysokości ekranu"
+        },
+        "media_fit": {
+          "label": "Dopasowanie multimediów",
+          "options__1": {
+            "label": "Oryginalny"
+          },
+          "options__2": {
+            "label": "Wypełnienie"
           }
         }
       }
@@ -2326,6 +2452,23 @@
               "content": "Aby wyświetlić ocenę, dodaj aplikację do oceny produktów. [Dowiedz się więcej](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#featured-product-rating)"
             }
           }
+        },
+        "sku": {
+          "name": "SKU",
+          "settings": {
+            "text_style": {
+              "label": "Styl tekstu",
+              "options__1": {
+                "label": "Tekst podstawowy"
+              },
+              "options__2": {
+                "label": "Podtytuł"
+              },
+              "options__3": {
+                "label": "Duże litery"
+              }
+            }
+          }
         }
       },
       "settings": {
@@ -2367,10 +2510,10 @@
           "content": "Dla każdej subskrypcji e-maili tworzone jest konto klienta. [Dowiedz się więcej](https://help.shopify.com/manual/customers)"
         },
         "image": {
-          "label": "Zdjęcie tła"
+          "label": "Obraz tła"
         },
         "show_background_image": {
-          "label": "Wyświetl zdjęcie tła"
+          "label": "Wyświetl obraz tła"
         },
         "show_text_box": {
           "label": "Pokaż kontener na komputerze"

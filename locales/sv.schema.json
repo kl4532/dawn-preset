@@ -141,15 +141,6 @@
         "paragraph": "Priser i varukorgen och kassan visar alltid valutakoder. T.ex. 1,00 USD."
       }
     },
-    "favicon": {
-      "name": "Favicon",
-      "settings": {
-        "favicon": {
-          "label": "Favicon-bild",
-          "info": "Kommer skalas ned till 32 x 32 px"
-        }
-      }
-    },
     "layout": {
       "name": "Layout",
       "settings": {
@@ -157,7 +148,7 @@
           "label": "Sidbredd"
         },
         "spacing_sections": {
-          "label": "Vertikalt utrymme mellan avsnitt"
+          "label": "Mellanrum mellan mallavsnitt"
         },
         "header__grid": {
           "content": "Rutnät"
@@ -353,6 +344,22 @@
             "label": "Kort"
           },
           "label": "Stil"
+        }
+      }
+    },
+    "logo": {
+      "name": "Logotyp",
+      "settings": {
+        "logo_image": {
+          "label": "Logotyp"
+        },
+        "logo_width": {
+          "label": "Logotypbredd för dator",
+          "info": "Logotypbredd optimeras automatiskt för mobilen."
+        },
+        "favicon": {
+          "label": "Favicon-bild",
+          "info": "Kommer skalas ned till 32 x 32 px"
         }
       }
     }
@@ -782,7 +789,7 @@
           "content": "Land/region-väljare"
         },
         "header__4": {
-          "info": "Om du vill lägga till land/region går du till dina [betalningsinställningar.](/admin/settings/payments)"
+          "info": "Om du vill lägga till land/region går du till dina [marknadsinställningar.](/admin/settings/markets)"
         },
         "enable_country_selector": {
           "label": "Aktivera land/region-väljare"
@@ -804,19 +811,19 @@
         },
         "margin_top": {
           "label": "Övre marginal"
+        },
+        "header__8": {
+          "content": "Policylänkar",
+          "info": "Gå till dina [policyinställningar ](/admin/settings/legal) för att lägga till butikspolicyer."
+        },
+        "show_policy": {
+          "label": "Visa policylänkar"
         }
       }
     },
     "header": {
       "name": "Rubrik",
       "settings": {
-        "logo": {
-          "label": "Logotypbild"
-        },
-        "logo_width": {
-          "unit": "px",
-          "label": "Anpassad logotypsbredd"
-        },
         "logo_position": {
           "label": "Desktoplogotypens position",
           "options__1": {
@@ -866,6 +873,12 @@
           "options__2": {
             "label": "Vänster"
           }
+        },
+        "logo_header": {
+          "content": "Logotyp"
+        },
+        "logo_help": {
+          "content": "Redigera din logotyp i [temainställningarna](/editor?context=theme&category=logo)."
         }
       }
     },
@@ -1460,12 +1473,11 @@
     "main-password-header": {
       "name": "Lösenord sidhuvud",
       "settings": {
-        "logo": {
-          "label": "Logotypbild"
+        "logo_header": {
+          "content": "Logotyp"
         },
-        "logo_max_width": {
-          "label": "Anpassad logotypsbredd",
-          "unit": "px"
+        "logo_help": {
+          "content": "Redigera din logotyp i temainställningarna."
         }
       }
     },
@@ -1726,7 +1738,7 @@
           "name": "Kompletterande produkter",
           "settings": {
             "paragraph": {
-              "content": "Lägg till appen Search & Discovery för att välja tilläggsprodukter. [Mer information](https://shopify.dev/themes/product-merchandising/recommendations)"
+              "content": "Lägg till appen Search & Discovery för att välja tilläggsprodukter. [Mer information](https://help.shopify.com/manual/online-store/search-and-discovery/product-recommendations)"
             },
             "heading": {
               "label": "Rubrik"
@@ -1765,6 +1777,95 @@
               "label": "Aktivera knapp för snabb tilläggning"
             }
           }
+        },
+        "icon_with_text": {
+          "name": "Ikon med text",
+          "settings": {
+            "layout": {
+              "label": "Layout",
+              "options__1": {
+                "label": "Liggande"
+              },
+              "options__2": {
+                "label": "Stående"
+              }
+            },
+            "content": {
+              "label": "Innehåll",
+              "info": "Välj en ikon eller lägg till en bild för varje kolumn eller rad."
+            },
+            "heading": {
+              "info": "Lämna rubriketiketten tom för att dölja ikonkolumnen."
+            },
+            "icon_1": {
+              "label": "Första ikon"
+            },
+            "image_1": {
+              "label": "Första bild"
+            },
+            "heading_1": {
+              "label": "Första rubrik"
+            },
+            "icon_2": {
+              "label": "Andra ikon"
+            },
+            "image_2": {
+              "label": "Andra bild"
+            },
+            "heading_2": {
+              "label": "Andra rubrik"
+            },
+            "icon_3": {
+              "label": "Tredje ikon"
+            },
+            "image_3": {
+              "label": "Tredje bild"
+            },
+            "heading_3": {
+              "label": "Tredje rubrik"
+            }
+          }
+        },
+        "sku": {
+          "name": "Lagerhållningsenhet",
+          "settings": {
+            "text_style": {
+              "label": "Textstil",
+              "options__1": {
+                "label": "Brödtext"
+              },
+              "options__2": {
+                "label": "Underrubrik"
+              },
+              "options__3": {
+                "label": "Stora bokstäver"
+              }
+            }
+          }
+        },
+        "inventory": {
+          "name": "Lagerstatus",
+          "settings": {
+            "text_style": {
+              "label": "Textstil",
+              "options__1": {
+                "label": "Brödtext"
+              },
+              "options__2": {
+                "label": "Underrubrik"
+              },
+              "options__3": {
+                "label": "Stora bokstäver"
+              }
+            },
+            "inventory_threshold": {
+              "label": "Tröskel för låg lagernivå",
+              "info": "Välj 0 för att alltid visa i lager om tillgängligt."
+            },
+            "show_inventory_quantity": {
+              "label": "Visa inventering"
+            }
+          }
         }
       },
       "settings": {
@@ -1797,7 +1898,7 @@
           }
         },
         "media_size": {
-          "label": "Mediastorlek på desktop",
+          "label": "Mediabredd för dator",
           "options__1": {
             "label": "Liten"
           },
@@ -1829,6 +1930,31 @@
           },
           "options__2": {
             "label": "Höger"
+          }
+        },
+        "image_zoom": {
+          "label": "Bildzoom",
+          "info": "Klicka och svep över för att öppna lightbox på mobilen.",
+          "options__1": {
+            "label": "Öppna lightbox"
+          },
+          "options__2": {
+            "label": "Klicka och svep över"
+          },
+          "options__3": {
+            "label": "Ingen zoom"
+          }
+        },
+        "constrain_to_viewport": {
+          "label": "Begränsa media till skärmhöjd"
+        },
+        "media_fit": {
+          "label": "Mediaanpassning",
+          "options__1": {
+            "label": "Original"
+          },
+          "options__2": {
+            "label": "Fyll"
           }
         }
       }
@@ -2324,6 +2450,23 @@
           "settings": {
             "paragraph": {
               "content": "Lägg till en produktbedömningsapp för att visa ett betyg. [Mer information](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#featured-product-rating)"
+            }
+          }
+        },
+        "sku": {
+          "name": "Lagerhållningsenhet",
+          "settings": {
+            "text_style": {
+              "label": "Textstil",
+              "options__1": {
+                "label": "Brödtext"
+              },
+              "options__2": {
+                "label": "Underrubrik"
+              },
+              "options__3": {
+                "label": "Stora bokstäver"
+              }
             }
           }
         }

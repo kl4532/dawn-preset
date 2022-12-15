@@ -141,15 +141,6 @@
         "paragraph": "Sepet ve ödeme ücretleri her zaman para birimi kodlarını gösterir. Örnek: 1,00 USD."
       }
     },
-    "favicon": {
-      "name": "Favicon",
-      "settings": {
-        "favicon": {
-          "label": "Favicon görseli",
-          "info": "Ölçeği 32 x 32 piksele düşürülür"
-        }
-      }
-    },
     "layout": {
       "name": "Düzen",
       "settings": {
@@ -157,7 +148,7 @@
           "label": "Sayfa genişliği"
         },
         "spacing_sections": {
-          "label": "Bölümler arasında dikey boşluk"
+          "label": "Şablon bölümleri arasındaki alan"
         },
         "header__grid": {
           "content": "Izgara"
@@ -353,6 +344,22 @@
             "label": "Kart"
           },
           "label": "Stil"
+        }
+      }
+    },
+    "logo": {
+      "name": "Logo",
+      "settings": {
+        "logo_image": {
+          "label": "Logo"
+        },
+        "logo_width": {
+          "label": "Masaüstü logo genişliği",
+          "info": "Logo genişliği, mobil için otomatik olarak optimize edilir."
+        },
+        "favicon": {
+          "label": "Favicon görseli",
+          "info": "Ölçeği 32 x 32 piksele düşürülür"
         }
       }
     }
@@ -782,7 +789,7 @@
           "content": "Ülke/bölge seçici"
         },
         "header__4": {
-          "info": "Ülke/bölge eklemek için [ödeme ayarlarınıza ](/admin/settings/payments) gidin."
+          "info": "Ülke/bölge eklemek için [pazar ayarlarınıza ](/admin/settings/markets) gidin."
         },
         "enable_country_selector": {
           "label": "Ülke/bölge seçiciyi etkinleştir"
@@ -804,19 +811,19 @@
         },
         "margin_top": {
           "label": "Üst kenar boşluğu"
+        },
+        "header__8": {
+          "content": "Politika bağlantıları",
+          "info": "Mağaza politikası eklemek için [politika ayarlarınıza](/admin/settings/legal) gidin."
+        },
+        "show_policy": {
+          "label": "Politika bağlantılarını göster"
         }
       }
     },
     "header": {
       "name": "Üstbilgi",
       "settings": {
-        "logo": {
-          "label": "Logo görseli"
-        },
-        "logo_width": {
-          "unit": "piksel",
-          "label": "Özel logo genişliği"
-        },
         "logo_position": {
           "label": "Masaüstü logo konumu",
           "options__1": {
@@ -866,6 +873,12 @@
           "options__2": {
             "label": "Sol"
           }
+        },
+        "logo_header": {
+          "content": "Logo"
+        },
+        "logo_help": {
+          "content": "Logonuzu şurada düzenleyin: [tema ayarları](/editor?context=theme&category=logo)."
         }
       }
     },
@@ -1460,12 +1473,11 @@
     "main-password-header": {
       "name": "Parola üstbilgisi",
       "settings": {
-        "logo": {
-          "label": "Logo görseli"
+        "logo_header": {
+          "content": "Logo"
         },
-        "logo_max_width": {
-          "label": "Özel logo genişliği",
-          "unit": "piksel"
+        "logo_help": {
+          "content": "Logonuzu tema ayarlarında düzenleyin."
         }
       }
     },
@@ -1725,7 +1737,7 @@
           "name": "Tamamlayıcı ürünler",
           "settings": {
             "paragraph": {
-              "content": "Tamamlayıcı ürünleri seçmek için Search & Discovery uygulamasını ekleyin. [Daha fazla bilgi edinin](https://shopify.dev/themes/product-merchandising/recommendations)"
+              "content": "Tamamlayıcı ürünleri seçmek için Search & Discovery uygulamasını ekleyin. [Daha fazla bilgi edinin](https://help.shopify.com/manual/online-store/search-and-discovery/product-recommendations)"
             },
             "heading": {
               "label": "Başlık"
@@ -1764,6 +1776,95 @@
               "label": "Hızlı ekleme düğmesini etkinleştir"
             }
           }
+        },
+        "icon_with_text": {
+          "name": "Metin içeren simge",
+          "settings": {
+            "layout": {
+              "label": "Düzen",
+              "options__1": {
+                "label": "Yatay"
+              },
+              "options__2": {
+                "label": "Dikey"
+              }
+            },
+            "content": {
+              "label": "İçerik",
+              "info": "Her sütun veya satır için bir simge seçin ya da görsel ekleyin."
+            },
+            "heading": {
+              "info": "Simge sütununu gizlemek için başlık etiketini boş bırakın."
+            },
+            "icon_1": {
+              "label": "İlk simge"
+            },
+            "image_1": {
+              "label": "İlk görsel"
+            },
+            "heading_1": {
+              "label": "İlk başlık"
+            },
+            "icon_2": {
+              "label": "İkinci simge"
+            },
+            "image_2": {
+              "label": "İkinci görsel"
+            },
+            "heading_2": {
+              "label": "İkinci başlık"
+            },
+            "icon_3": {
+              "label": "Üçüncü simge"
+            },
+            "image_3": {
+              "label": "Üçüncü görsel"
+            },
+            "heading_3": {
+              "label": "Üçüncü başlık"
+            }
+          }
+        },
+        "sku": {
+          "name": "SKU",
+          "settings": {
+            "text_style": {
+              "label": "Metin stili",
+              "options__1": {
+                "label": "Gövde"
+              },
+              "options__2": {
+                "label": "Alt yazı"
+              },
+              "options__3": {
+                "label": "Büyük harf"
+              }
+            }
+          }
+        },
+        "inventory": {
+          "name": "Envanter durumu",
+          "settings": {
+            "text_style": {
+              "label": "Metin stili",
+              "options__1": {
+                "label": "Gövde"
+              },
+              "options__2": {
+                "label": "Alt yazı"
+              },
+              "options__3": {
+                "label": "Büyük harf"
+              }
+            },
+            "inventory_threshold": {
+              "label": "Düşük envanter eşiği",
+              "info": "Mevcutsa her zaman stokta göstermek için 0 değerini seçin"
+            },
+            "show_inventory_quantity": {
+              "label": "Envanter sayımını göster"
+            }
+          }
         }
       },
       "settings": {
@@ -1796,7 +1897,7 @@
           }
         },
         "media_size": {
-          "label": "Masaüstü medya boyutu",
+          "label": "Masaüstü medya genişliği",
           "info": "Medya, mobil cihazlar için otomatik olarak optimize edilir.",
           "options__1": {
             "label": "Küçük"
@@ -1828,6 +1929,31 @@
           },
           "options__2": {
             "label": "Sağ"
+          }
+        },
+        "image_zoom": {
+          "label": "Görsel yakınlaştırma",
+          "info": "Ligtbox'ı mobilde açmak için tıklayın ve imleci varsayılan seçeneklerin üzerine getirin.",
+          "options__1": {
+            "label": "Lightbox'ı aç"
+          },
+          "options__2": {
+            "label": "Tıkla ve imleci üzerine getir"
+          },
+          "options__3": {
+            "label": "Yakınlaştırma yok"
+          }
+        },
+        "constrain_to_viewport": {
+          "label": "Medyayı ekran yüksekliğiyle sınırla"
+        },
+        "media_fit": {
+          "label": "Medya sığdırma",
+          "options__1": {
+            "label": "Orijinal"
+          },
+          "options__2": {
+            "label": "Doldur"
           }
         }
       },
@@ -2324,6 +2450,23 @@
           "settings": {
             "paragraph": {
               "content": "Puan göstermek için bir ürün puanlandırma uygulaması ekleyin. [Daha fazla bilgi edinin](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#featured-product-rating)"
+            }
+          }
+        },
+        "sku": {
+          "name": "SKU",
+          "settings": {
+            "text_style": {
+              "label": "Metin stili",
+              "options__1": {
+                "label": "Gövde"
+              },
+              "options__2": {
+                "label": "Alt yazı"
+              },
+              "options__3": {
+                "label": "Büyük harf"
+              }
             }
           }
         }

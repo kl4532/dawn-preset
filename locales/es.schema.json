@@ -141,15 +141,6 @@
         "paragraph": "Los precios en el carrito y la pantalla de pago siempre muestran códigos de moneda. Ejemplo: USD 1,00."
       }
     },
-    "favicon": {
-      "name": "Favicon",
-      "settings": {
-        "favicon": {
-          "label": "Imagen de favicon",
-          "info": "Se reducirá a 32 × 32 px"
-        }
-      }
-    },
     "layout": {
       "name": "Diseño",
       "settings": {
@@ -157,7 +148,7 @@
           "label": "Ancho de página"
         },
         "spacing_sections": {
-          "label": "Espacio vertical entre secciones"
+          "label": "Espacio entre las secciones de la plantilla"
         },
         "header__grid": {
           "content": "Cuadrícula"
@@ -353,6 +344,22 @@
             "label": "Tarjeta"
           },
           "label": "Estilo"
+        }
+      }
+    },
+    "logo": {
+      "name": "Logo",
+      "settings": {
+        "logo_image": {
+          "label": "Logo"
+        },
+        "logo_width": {
+          "label": "Ancho del logo de escritorio",
+          "info": "El ancho del logo se optimiza automáticamente para dispositivos móviles."
+        },
+        "favicon": {
+          "label": "Imagen de favicon",
+          "info": "Se reducirá a 32 × 32 px"
         }
       }
     }
@@ -782,7 +789,7 @@
           "content": "Selector de país/región"
         },
         "header__4": {
-          "info": "Para agregar un país/región, ve a tu [configuración de pagos.](/admin/settings/payments)"
+          "info": "Para agregar un país o una región, ve a la [configuración del mercado.](/admin/settings/markets)"
         },
         "enable_country_selector": {
           "label": "Activar selector de país/región"
@@ -804,19 +811,19 @@
         },
         "margin_top": {
           "label": "Margen superior"
+        },
+        "header__8": {
+          "content": "Enlaces a las políticas",
+          "info": "Para agregar las políticas de la tienda, ve a tu [configuración de políticas](/admin/settings/legal)."
+        },
+        "show_policy": {
+          "label": "Mostrar enlaces a las políticas"
         }
       }
     },
     "header": {
       "name": "Encabezado",
       "settings": {
-        "logo": {
-          "label": "Imagen del logo"
-        },
-        "logo_width": {
-          "unit": "px",
-          "label": "Ancho del logo personalizado"
-        },
         "logo_position": {
           "label": "Posición de logo en computadora",
           "options__1": {
@@ -866,6 +873,12 @@
           "options__2": {
             "label": "Izquierda"
           }
+        },
+        "logo_header": {
+          "content": "Logo"
+        },
+        "logo_help": {
+          "content": "Edita tu logotipo en [configuración del tema](/editor?context=theme&category=logo)."
         }
       }
     },
@@ -1460,12 +1473,11 @@
     "main-password-header": {
       "name": "Encabezado de contraseña",
       "settings": {
-        "logo": {
-          "label": "Imagen del logo"
+        "logo_header": {
+          "content": "Logo"
         },
-        "logo_max_width": {
-          "label": "Ancho del logo personalizado",
-          "unit": "px"
+        "logo_help": {
+          "content": "Edita tu logo en la configuración del tema."
         }
       }
     },
@@ -1726,7 +1738,7 @@
           "name": "Productos complementarios",
           "settings": {
             "paragraph": {
-              "content": "Para seleccionar productos complementarios, agrega la aplicación Search & Discovery. [Más información](https://shopify.dev/themes/product-merchandising/recommendations)"
+              "content": "Para seleccionar productos complementarios, agrega la aplicación Search & Discovery. [Más información](https://help.shopify.com/manual/online-store/search-and-discovery/product-recommendations)"
             },
             "heading": {
               "label": "Encabezado"
@@ -1765,6 +1777,95 @@
               "label": "Activar botón de agregado rápido"
             }
           }
+        },
+        "icon_with_text": {
+          "name": "Ícono con texto",
+          "settings": {
+            "layout": {
+              "label": "Diseño",
+              "options__1": {
+                "label": "Horizontal"
+              },
+              "options__2": {
+                "label": "Vertical"
+              }
+            },
+            "content": {
+              "label": "Contenido",
+              "info": "Elige un ícono o agrega una imagen para cada columna o fila."
+            },
+            "heading": {
+              "info": "Deja la etiqueta de encabezado en blanco para ocultar la columna del ícono."
+            },
+            "icon_1": {
+              "label": "Primer ícono"
+            },
+            "image_1": {
+              "label": "Primera imagen"
+            },
+            "heading_1": {
+              "label": "Primer encabezado"
+            },
+            "icon_2": {
+              "label": "Segundo ícono"
+            },
+            "image_2": {
+              "label": "Segunda imagen"
+            },
+            "heading_2": {
+              "label": "Segundo encabezado"
+            },
+            "icon_3": {
+              "label": "Tercer ícono"
+            },
+            "image_3": {
+              "label": "Tercera imagen"
+            },
+            "heading_3": {
+              "label": "Tercer encabezado"
+            }
+          }
+        },
+        "sku": {
+          "name": "SKU",
+          "settings": {
+            "text_style": {
+              "label": "Estilo de texto",
+              "options__1": {
+                "label": "Cuerpo"
+              },
+              "options__2": {
+                "label": "Subtítulo"
+              },
+              "options__3": {
+                "label": "Mayúscula"
+              }
+            }
+          }
+        },
+        "inventory": {
+          "name": "Estado del inventario",
+          "settings": {
+            "text_style": {
+              "label": "Estilo de texto",
+              "options__1": {
+                "label": "Cuerpo"
+              },
+              "options__2": {
+                "label": "Subtítulo"
+              },
+              "options__3": {
+                "label": "Mayúscula"
+              }
+            },
+            "inventory_threshold": {
+              "label": "Umbral de inventario bajo",
+              "info": "Elige 0 para que siempre se muestre en existencias si está disponible."
+            },
+            "show_inventory_quantity": {
+              "label": "Mostrar recuento de inventario"
+            }
+          }
         }
       },
       "settings": {
@@ -1797,7 +1898,7 @@
           }
         },
         "media_size": {
-          "label": "Tamaño de elementos multimedia en computadoras",
+          "label": "Ancho del elemento multimedia en computadora",
           "info": "Los elementos multimedia se optimizan automáticamente para dispositivos móviles.",
           "options__1": {
             "label": "Pequeño"
@@ -1829,6 +1930,31 @@
           },
           "options__2": {
             "label": "Derecha"
+          }
+        },
+        "image_zoom": {
+          "label": "Ampliar imagen",
+          "info": "En dispositivos móviles, la opción Hacer clic y pasar sobre el elemento cambia a Abrir Lightbox de forma predeterminada.",
+          "options__1": {
+            "label": "Abrir Lightbox"
+          },
+          "options__2": {
+            "label": "Hacer clic y pasar sobre el elemento"
+          },
+          "options__3": {
+            "label": "Sin zoom"
+          }
+        },
+        "constrain_to_viewport": {
+          "label": "Ajustar el elemento multimedia a la altura de la pantalla"
+        },
+        "media_fit": {
+          "label": "Ajuste del elemento multimedia",
+          "options__1": {
+            "label": "Original"
+          },
+          "options__2": {
+            "label": "Rellenar"
           }
         }
       }
@@ -2324,6 +2450,23 @@
           "settings": {
             "paragraph": {
               "content": "Agrega una aplicación para mostrar las calificaciones de los productos. [Más información](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#featured-product-rating)"
+            }
+          }
+        },
+        "sku": {
+          "name": "SKU",
+          "settings": {
+            "text_style": {
+              "label": "Estilo de texto",
+              "options__1": {
+                "label": "Cuerpo"
+              },
+              "options__2": {
+                "label": "Subtítulo"
+              },
+              "options__3": {
+                "label": "Mayúscula"
+              }
             }
           }
         }

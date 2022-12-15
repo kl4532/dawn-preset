@@ -141,15 +141,6 @@
         "paragraph": "Prijzen in winkelwagen en bij checkout tonen altijd de valutacodes. Voorbeeld: $1,00 USD."
       }
     },
-    "favicon": {
-      "name": "Favicon",
-      "settings": {
-        "favicon": {
-          "label": "Favicon-afbeelding",
-          "info": "Wordt verkleind tot 32x32 pixels"
-        }
-      }
-    },
     "layout": {
       "name": "Opmaak",
       "settings": {
@@ -157,7 +148,7 @@
           "label": "Paginabreedte"
         },
         "spacing_sections": {
-          "label": "Verticale ruimte tussen gedeeltes"
+          "label": "Ruimte tussen secties in een template"
         },
         "header__grid": {
           "content": "Grid"
@@ -353,6 +344,22 @@
             "label": "Kaart"
           },
           "label": "Stijl"
+        }
+      }
+    },
+    "logo": {
+      "name": "Logo",
+      "settings": {
+        "logo_image": {
+          "label": "Logo"
+        },
+        "logo_width": {
+          "label": "Breedte van logo op desktop",
+          "info": "De breedte van het logo wordt automatisch geoptimaliseerd voor mobiele weergave."
+        },
+        "favicon": {
+          "label": "Favicon-afbeelding",
+          "info": "Wordt verkleind tot 32x32 pixels"
         }
       }
     }
@@ -782,7 +789,7 @@
           "content": "Kiezer voor land/regio"
         },
         "header__4": {
-          "info": "Ga naar je [payment settings.](/admin/settings/payments) om een land/regio toe te voegen"
+          "info": "Ga naar de [marktinstellingen](/admin/settings/markets) om een land/regio toe te voegen."
         },
         "enable_country_selector": {
           "label": "Kiezer voor land/regio inschakelen"
@@ -804,19 +811,19 @@
         },
         "margin_top": {
           "label": "Bovenmarge"
+        },
+        "header__8": {
+          "content": "Links naar beleid",
+          "info": "Ga naar je [beleidsinstellingen ](/admin/settings/legal) om winkelbeleid toe te voegen."
+        },
+        "show_policy": {
+          "label": "Links naar beleid tonen"
         }
       }
     },
     "header": {
       "name": "Koptekst",
       "settings": {
-        "logo": {
-          "label": "Afbeelding van logo"
-        },
-        "logo_width": {
-          "unit": "px",
-          "label": "Aangepaste logo-breedte"
-        },
         "logo_position": {
           "label": "Positie van logo voor desktop",
           "options__1": {
@@ -866,6 +873,12 @@
           "options__2": {
             "label": "Links"
           }
+        },
+        "logo_header": {
+          "content": "Logo"
+        },
+        "logo_help": {
+          "content": "Bewerk je logo in [thema-instellingen](/editor?context=theme&category=logo)."
         }
       }
     },
@@ -1460,12 +1473,11 @@
     "main-password-header": {
       "name": "Wachtwoord koptekst",
       "settings": {
-        "logo": {
-          "label": "Afbeelding van logo"
+        "logo_header": {
+          "content": "Logo"
         },
-        "logo_max_width": {
-          "label": "Aangepaste logo-breedte",
-          "unit": "px"
+        "logo_help": {
+          "content": "Bewerk je logo in thema-instellingen."
         }
       }
     },
@@ -1726,7 +1738,7 @@
           "name": "Aanvullende producten",
           "settings": {
             "paragraph": {
-              "content": "Als je aanvullende producten wilt selecteren, voeg je de Search en Zichtbaarheid-app toe. [Meer informatie](https://shopify.dev/themes/product-merchandising/recommendations)"
+              "content": "Als je aanvullende producten wilt selecteren, voeg je de Search en Zichtbaarheid-app toe. [Meer informatie](https://help.shopify.com/manual/online-store/search-and-discovery/product-recommendations)"
             },
             "heading": {
               "label": "Koptekst"
@@ -1765,6 +1777,95 @@
               "label": "Knop 'Snel toevoegen' inschakelen"
             }
           }
+        },
+        "icon_with_text": {
+          "name": "Pictogram met tekst",
+          "settings": {
+            "layout": {
+              "label": "Opmaak",
+              "options__1": {
+                "label": "Horizontaal"
+              },
+              "options__2": {
+                "label": "Verticaal"
+              }
+            },
+            "content": {
+              "label": "Inhoud",
+              "info": "Kies een pictogram of voeg een afbeelding toe voor elke kolom of rij."
+            },
+            "heading": {
+              "info": "Laat het opschriftlabel leeg om de kolom met pictogrammen te verbergen."
+            },
+            "icon_1": {
+              "label": "Eerste pictogram"
+            },
+            "image_1": {
+              "label": "Eerste afbeelding"
+            },
+            "heading_1": {
+              "label": "Eerste opschrift"
+            },
+            "icon_2": {
+              "label": "Tweede pictogram"
+            },
+            "image_2": {
+              "label": "Tweede afbeelding"
+            },
+            "heading_2": {
+              "label": "Tweede opschrift"
+            },
+            "icon_3": {
+              "label": "Derde pictogram"
+            },
+            "image_3": {
+              "label": "Derde afbeelding"
+            },
+            "heading_3": {
+              "label": "Derde opschrift"
+            }
+          }
+        },
+        "sku": {
+          "name": "SKU",
+          "settings": {
+            "text_style": {
+              "label": "Tekststijl",
+              "options__1": {
+                "label": "Hoofdtekst"
+              },
+              "options__2": {
+                "label": "Ondertitel"
+              },
+              "options__3": {
+                "label": "Hoofdletters"
+              }
+            }
+          }
+        },
+        "inventory": {
+          "name": "Voorraadstatus",
+          "settings": {
+            "text_style": {
+              "label": "Tekststijl",
+              "options__1": {
+                "label": "Hoofdtekst"
+              },
+              "options__2": {
+                "label": "Ondertitel"
+              },
+              "options__3": {
+                "label": "Hoofdletters"
+              }
+            },
+            "inventory_threshold": {
+              "label": "Drempelwaarde lage voorraad",
+              "info": "Kies 0 als je altijd 'Op voorraad' wilt weergeven als er voorraad beschikbaar is."
+            },
+            "show_inventory_quantity": {
+              "label": "Voorraadhoeveelheid weergeven"
+            }
+          }
         }
       },
       "settings": {
@@ -1797,7 +1898,7 @@
           }
         },
         "media_size": {
-          "label": "Mediagrootte desktop",
+          "label": "Media op desktopbreedte",
           "info": "Media wordt automatisch geoptimaliseerd voor mobiel.",
           "options__1": {
             "label": "Klein"
@@ -1829,6 +1930,31 @@
           },
           "options__2": {
             "label": "Rechts"
+          }
+        },
+        "image_zoom": {
+          "label": "Inzoomen op afbeelding",
+          "info": "Standaarden voor klikken en aanwijzen om Lightbox te openen op mobiel.",
+          "options__1": {
+            "label": "Lightbox openen"
+          },
+          "options__2": {
+            "label": "Klikken en aanwijzen"
+          },
+          "options__3": {
+            "label": "Geen zoom"
+          }
+        },
+        "constrain_to_viewport": {
+          "label": "Beperk media tot schermhoogte"
+        },
+        "media_fit": {
+          "label": "Media passen",
+          "options__1": {
+            "label": "Origineel"
+          },
+          "options__2": {
+            "label": "Opvullen"
           }
         }
       }
@@ -2324,6 +2450,23 @@
           "settings": {
             "paragraph": {
               "content": "Voeg een app toe voor productbeoordelingen om deze weer te geven. [Meer informatie](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#featured-product-rating)"
+            }
+          }
+        },
+        "sku": {
+          "name": "SKU",
+          "settings": {
+            "text_style": {
+              "label": "Tekststijl",
+              "options__1": {
+                "label": "Hoofdtekst"
+              },
+              "options__2": {
+                "label": "Ondertitel"
+              },
+              "options__3": {
+                "label": "Hoofdletters"
+              }
             }
           }
         }
